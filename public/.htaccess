@@ -1,0 +1,7 @@
+# när webservern laddar mappen med den här filen i körs den här filen
+Options -MultiViews
+RewriteEngine On
+RewriteBase /projekt_grupp5/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)$ index.php?url=$1 [L]

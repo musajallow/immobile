@@ -1,0 +1,35 @@
+.grid-alert {
+    grid-column: 2 / 4;
+}
+
+/* Table with css-grid TESTING but working :)*/
+.table-container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    margin-bottom: 5%;
+}
+
+.head {
+    display: grid;
+    justify-items: center;
+    border: 1px solid black;
+}
+
+.table-row {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    justify-items: center;
+    
+}
+
+.grid-table {
+    grid-column: 2 / 4;
+}
+
+td, th {
+    padding: 2%;
+    text-align: center;
+
+}
